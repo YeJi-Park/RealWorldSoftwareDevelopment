@@ -48,8 +48,8 @@
   - final을 적용해도 객체가 가변 상태를 포함하기 때문에 바뀌지 못하도록 강요할 수는 없음 
   - 추상 메서드의 메서드 파라미터에 final을 사용하면 실제 구현이 없어 키워드의 의미가 무력화됨
   - var 키워드가 등장하면서 final의 유용성이 감소함
-- [예제 1. 모든 거래 내역의 합 계산하기](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/src/chapter2/exam01/BankTransactionAnalyzerSimple.java)
-- [예제 2. 1월 입출금 내역 합계 계산하기](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/src/chapter2/exam02/BankTransactionAnalyzerSimple.java)
+- [예제 1. 모든 거래 내역의 합 계산하기](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/blob/main/src/chapter2/exam01/BankTransactionAnalyzerSimple.java)
+- [예제 2. 1월 입출금 내역 합계 계산하기](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/blob/main/src/chapter2/exam02/BankTransactionAnalyzerSimple.java)
 
 ###### 2.5 코드 유지보수성과 안티 패턴 
 
@@ -85,12 +85,12 @@
   - 주어진 형식의 입력 파싱
   - 결과 처리
   - 결과 리포트
-- [예제 3. 파싱 로직을 추출해 한 클래스로 만듦](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/src/chapter2/exam03/BankTransactionAnalyzerSimple.java)
+- [예제 3. 파싱 로직을 추출해 한 클래스로 만듦](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/blob/main/src/chapter2/exam03/BankStatementCSVParser.java)
   - 다른 문제 구현에 활용할 수 있도록 CSV 파싱 로직을 새로운 클래스로 분리
-- [예제 4. 입출금 내역 도메인 클래스](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/src/chapter2/exam03/BankTransactionAnalyzerSimple.java)
+- [예제 4. 입출금 내역 도메인 클래스](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/blob/main/src/chapter2/exam03/BankTransaction.java)
   - 도메인: 비즈니스 문제와 동일한 단어와 용어를 사용한다는 의미
   - 응용 프로그램의 다른 부분에서 입출금 내역 부분이라는 의미를 공유할 수 있어 유용함
-- [예제 5. 6 입출금 내역 CSV 파서 사용하기](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/src/chapter2/exam03/BankTransactionAnalyzerSimple.java)
+- [예제 5. 6 입출금 내역 CSV 파서 사용하기](https://github.com/YeJi-Park/RealWorldSoftwareDevelopment/blob/main/src/chapter2/exam03/BankTransactionAnalyzer.java)
   - CSV Parser를 이용하도록 기존 코드를 리팩토링
   - BankTransaction 객체에서 직접 정보를 추출하기 때문에 내부 파싱을 알 필요가 없음
   - 메인 응용 프로그램에서 파싱 로직을 구현하는 부분이 사라져 새로운 요구사항이 들어와도 Parser 클래스로 캡슐화된 기능을 재사용해 구현함
